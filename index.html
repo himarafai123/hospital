@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=decive-width, initial-scale=1.0">
+  <title>Hospital website design</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <div class="logo">
+        <a href="index.html"><img src="images/logo.jpg" ></a>
+    </div>
+        <div class="nav-links" id="navLinks">            
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="doctors.html">DOCTORS</a></li>
+                <li><a href="consult.html">CONSULTING RESERVATION</a></li>
+                <li><a href="pharmacy.html">PHARMACY</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+<div class="text-box">
+    <h1>Cedar Grove Hospital</h1>
+    <p>Welcome to Cedar Grove Hospital, where compassionate care meets advanced medical expertise.</p>
+    <a href="services.html" class="hero-btn">Visit us to learn more</a>
+</div>
+
+</section>
+
+<!--Overview-->
+<section class="Overview">
+    <h1><b>Overview</b></h1> 
+    <p>Nestled in a tranquil setting, our hospital is dedicated to providing comprehensive healthcare services with a focus on patient-centered treatment. At Cedar Grove, our experienced team of doctors, nurses, and staff work together to ensure that every patient receives personalized attention in a warm and supportive environment. </p>
+ <!--Service-->  
+    <div class="row">
+        <a href="services.html" class="service-col">
+            <h3>Emergency Care</h3>
+            <p>24/7 emergency department equipped to handle acute medical emergencies, trauma, and urgent care needs.</p>
+        </a>
+        <a href="services.html" class="service-col">
+            <h3>Surgical Services</h3>
+            <p>A state-of-the-art surgical suite providing both inpatient and outpatient surgical procedures, ranging from minimally invasive surgeries to complex operations.</p>
+        </a> 
+        <a href="services.html" class="service-col">
+            <h3>Maternity and Neonatal Care</h3>
+            <p>Comprehensive prenatal care, labor and delivery services, and a neonatal intensive care unit (NICU) for newborns requiring specialized care.</p>
+        </a>
+
+    </div>
+<!--Reservation button-->
+    <div class="reserve">
+    <h2>World-class care, focused on YOU</h2>
+    <a href="consult.html" class="reserve-btn">Request an appointment</a>
+    </div>
+    <br>
+    <div class="hr1">
+    <hr>
+    </div>
+</section>
+    <!--Branches-->
+<section class="branches">
+    <h1>Our Clinics Near You</h1>
+
+    <div class="row">
+        <a href="about.html" class="branch-col">
+            <img src="images/buil10.jpg">
+            <div class="layer">
+                <h3><b>LONDON</b></h3>
+            </div>
+        </a>
+        <a href="about.html" class="branch-col">
+            <img src="images/build20.jpg">
+            <div class="layer">
+                <h3><b>NEW YORK</b></h3>
+            </div>
+        </a>
+        <a href="about.html" class="branch-col">
+            <img src="images/build30.jpg">
+            <div class="layer">
+                <h3><b>WASHINGTON</b></h3>
+            </div>
+        </a>
+            
+    </div>
+    <br>
+    <hr width="100%" size="2">
+
+</section>
+<!--Shortcuts-->
+<section class="shortcut">
+   <h1>Why choose us?</h1>
+   <p>Cedar Grove Hospital can offer a wide range of services to meet the diverse needs of its community.</p>
+   <div class="row">
+    <div class="shortcut-col">
+        <img src="images/doc.jpg">
+        <h3><a href="doctors.html" >A DOCTOR NEAR YOU</a></h3>
+        <ul style="list-style-type:circle;">
+            <li>Find detailed information about our medical staff.</li>
+            <li>Search for doctors by specialty, name, or condition treated.            </li>
+        </ul>
+    </div>
+    <div class="shortcut-col">
+        <img src="images/loc.jpg">
+        <h3><a href="about.html"> A CLINIC NEAR YOU</a></h3>
+        <ul style="list-style-type:circle;">
+            <li>Access our nearest locations for exceptional care.</li>
+            <li>Experience convenient healthcare services across multiple locations.</li>
+        </ul>
+    </div>
+    <div class="shortcut-col">
+        <img src="images/treat.jpg">
+        <h3><a href="services.html">CONDITIONS AND TREATMENTS</a></h3>
+        <ul style="list-style-type:circle;">
+            <li>Receive comprehensive care for a wide range of medical conditions.</li>
+            <li>Benefit from advanced treatments and expert care.</li>
+        </ul>
+    </div>
+
+   </div>
+
+   <hr width="100%" size="2">
+</section>
+
+<!--Footer-->
+<section class="footer">
+<h4><b>About Us</b></h4>
+    <ol style="list-style-type: decimal;">
+        <li>1. Comprehensive Care.</li>
+        <li>2. Multiple Locations.</li>
+        <li>3. Expert Medical Staff.</li>
+    </ol>
+<div class="icons">
+    <i class="fa-brands fa-facebook-f"></i>    
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+</div>
+<br>
+<hr width="100%" size="2">
+<br>
+<p>Made with <i class="fa-regular fa-heart"></i> by Hima</p>
+</section>
+
+<!--Code for toggle menu-->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+    navLinks.style.right = "0px";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>
